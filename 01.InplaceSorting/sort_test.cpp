@@ -25,7 +25,7 @@ TEST(BubbleSortSuite, AlreadySorted)
     std::vector<int> arr = {1, 2, 3, 4, 5};
     bubble_sort(arr.begin(), arr.end());
     EXPECT_TRUE(std::is_sorted(arr.begin(), arr.end()));
-    EXPECT_EQ(arr, (std::vector<int>{1, 2, 3, 4, 5}));
+    EXPECT_EQ(arr, (std::vector<int> {1, 2, 3, 4, 5}));
 }
 
 TEST(BubbleSortSuite, ReverseSorted)
@@ -33,7 +33,7 @@ TEST(BubbleSortSuite, ReverseSorted)
     std::vector<int> arr = {5, 4, 3, 2, 1};
     bubble_sort(arr.begin(), arr.end());
     EXPECT_TRUE(std::is_sorted(arr.begin(), arr.end()));
-    EXPECT_EQ(arr, (std::vector<int>{1, 2, 3, 4, 5}));
+    EXPECT_EQ(arr, (std::vector<int> {1, 2, 3, 4, 5}));
 }
 
 TEST(BubbleSortSuite, RandomUnsorted)
@@ -48,7 +48,7 @@ TEST(BubbleSortSuite, AllEqualElements)
     std::vector<int> arr = {8, 8, 8, 8, 8};
     bubble_sort(arr.begin(), arr.end());
     EXPECT_TRUE(std::is_sorted(arr.begin(), arr.end()));
-    EXPECT_EQ(arr, (std::vector<int>{8, 8, 8, 8, 8}));
+    EXPECT_EQ(arr, (std::vector<int> {8, 8, 8, 8, 8}));
 }
 
 TEST(BubbleSortSuite, NegativeNumbers)
@@ -56,7 +56,7 @@ TEST(BubbleSortSuite, NegativeNumbers)
     std::vector<int> arr = {-5, 3, -2, 0, -10, 8};
     bubble_sort(arr.begin(), arr.end());
     EXPECT_TRUE(std::is_sorted(arr.begin(), arr.end()));
-    EXPECT_EQ(arr, (std::vector<int>{-10, -5, -2, 0, 3, 8}));
+    EXPECT_EQ(arr, (std::vector<int> {-10, -5, -2, 0, 3, 8}));
 }
 
 TEST(BubbleSortSuite, DuplicatesInMiddle)
@@ -64,7 +64,7 @@ TEST(BubbleSortSuite, DuplicatesInMiddle)
     std::vector<int> arr = {5, 3, 3, 1, 2, 2, 4};
     bubble_sort(arr.begin(), arr.end());
     EXPECT_TRUE(std::is_sorted(arr.begin(), arr.end()));
-    EXPECT_EQ(arr, (std::vector<int>{1, 2, 2, 3, 3, 4, 5}));
+    EXPECT_EQ(arr, (std::vector<int> {1, 2, 2, 3, 3, 4, 5}));
 }
 
 
@@ -88,7 +88,7 @@ TEST(QuickSortSuite, AlreadySorted)
     std::vector<int> arr = {1, 2, 3, 4, 5};
     quick_sort(arr.begin(), arr.end());
     EXPECT_TRUE(std::is_sorted(arr.begin(), arr.end()));
-    EXPECT_EQ(arr, (std::vector<int>{1, 2, 3, 4, 5}));
+    EXPECT_EQ(arr, (std::vector<int> {1, 2, 3, 4, 5}));
 }
 
 TEST(QuickSortSuite, ReverseSorted)
@@ -96,7 +96,7 @@ TEST(QuickSortSuite, ReverseSorted)
     std::vector<int> arr = {5, 4, 3, 2, 1};
     quick_sort(arr.begin(), arr.end());
     EXPECT_TRUE(std::is_sorted(arr.begin(), arr.end()));
-    EXPECT_EQ(arr, (std::vector<int>{1, 2, 3, 4, 5}));
+    EXPECT_EQ(arr, (std::vector<int> {1, 2, 3, 4, 5}));
 }
 
 TEST(QuickSortSuite, RandomUnsorted)
@@ -111,7 +111,7 @@ TEST(QuickSortSuite, AllEqualElements)
     std::vector<int> arr = {8, 8, 8, 8, 8};
     quick_sort(arr.begin(), arr.end());
     EXPECT_TRUE(std::is_sorted(arr.begin(), arr.end()));
-    EXPECT_EQ(arr, (std::vector<int>{8, 8, 8, 8, 8}));
+    EXPECT_EQ(arr, (std::vector<int> {8, 8, 8, 8, 8}));
 }
 
 TEST(QuickSortSuite, NegativeNumbers)
@@ -119,7 +119,7 @@ TEST(QuickSortSuite, NegativeNumbers)
     std::vector<int> arr = {-5, 3, -2, 0, -10, 8};
     quick_sort(arr.begin(), arr.end());
     EXPECT_TRUE(std::is_sorted(arr.begin(), arr.end()));
-    EXPECT_EQ(arr, (std::vector<int>{-10, -5, -2, 0, 3, 8}));
+    EXPECT_EQ(arr, (std::vector<int> {-10, -5, -2, 0, 3, 8}));
 }
 
 TEST(QuickSortSuite, DuplicatesInMiddle)
@@ -127,7 +127,7 @@ TEST(QuickSortSuite, DuplicatesInMiddle)
     std::vector<int> arr = {5, 3, 3, 1, 2, 2, 4};
     quick_sort(arr.begin(), arr.end());
     EXPECT_TRUE(std::is_sorted(arr.begin(), arr.end()));
-    EXPECT_EQ(arr, (std::vector<int>{1, 2, 2, 3, 3, 4, 5}));
+    EXPECT_EQ(arr, (std::vector<int> {1, 2, 2, 3, 3, 4, 5}));
 }
 
 TEST(QuickSortSuite, LargeArray)

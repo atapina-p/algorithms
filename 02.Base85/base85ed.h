@@ -19,7 +19,7 @@ namespace base85
  *
  * @see decode()
  */
-std::vector<uint8_t> encode(std::vector<uint8_t> const &bytes); 
+std::vector<uint8_t> encode(std::vector<uint8_t> const &bytes);
 
 
 /**
@@ -30,7 +30,7 @@ std::vector<uint8_t> encode(std::vector<uint8_t> const &bytes);
  *
  * @see encode()
  */
-std::vector<uint8_t> decode(std::vector<uint8_t> const &b85str); 
+std::vector<uint8_t> decode(std::vector<uint8_t> const &b85str);
 
 } // namespace base85
 

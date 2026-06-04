@@ -11,7 +11,7 @@
 template <typename Iterator>
 void bubble_sort(Iterator begin, Iterator end)
 {
-    if (begin == end) return; 
+    if (begin == end) return;
 
     for (auto i = begin; i != end; ++i)
     {
@@ -20,12 +20,12 @@ void bubble_sort(Iterator begin, Iterator end)
         for (auto j = begin; j != limit; ++j)
         {
             auto next = std::next(j);
-            if (next == limit) break;  
+            if (next == limit) break;
 
-            if (*next < *j) 
+            if (*next < *j)
             {
                 using std::swap;
-                swap(*j, *next);  
+                swap(*j, *next);
                 swapped = true;
             }
         }
@@ -44,7 +44,7 @@ void quick_sort(Iterator begin, Iterator end)
     auto pivot_iter = std::prev(end);
     auto pivot_value = *pivot_iter;
     auto i = begin;
-    
+
     for (auto j = begin; j != pivot_iter; ++j)
     {
         if (*j < pivot_value)
@@ -57,10 +57,10 @@ void quick_sort(Iterator begin, Iterator end)
             ++i;
         }
     }
-    
+
     using std::swap;
-    swap(*i, *pivot_iter);  
-    
+    swap(*i, *pivot_iter);
+
     // Рекурсивно сортируем левую и правую части
     quick_sort(begin, i);
     quick_sort(std::next(i), end);
