@@ -21,6 +21,8 @@ cleanall : clean
 
 mrproper : cleanall
 
+tidy:
+	../tidy.sh
 
 depends :
 	makedepend -f Makefile.hdrdep *.c*
