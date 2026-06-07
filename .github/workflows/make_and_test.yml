@@ -16,6 +16,7 @@ jobs:
         task:
         - 01.InplaceSorting
         - 02.Base85
+        - 03.Gauss
 
     steps:
 
